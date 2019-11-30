@@ -1,0 +1,47 @@
+<ion-header>
+    <ion-navbar color="dark">
+        <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <h5 padding>Controle de abastecimento:</h5>
+    <div>
+        <ion-item>
+            <ion-label class="bold">KM Atual:</ion-label>
+            <ion-input type="number" [(ngModel)]="abastecimento.km_abastecimento"></ion-input>
+        </ion-item>
+    </div>
+    <div>
+        <ion-item class="padding-top-10">
+            <ion-label class="bold">Litros abastecidos:</ion-label>
+            <ion-input type="number" [(ngModel)]="abastecimento.litros_abastecidos"></ion-input>
+        </ion-item>
+    </div>
+    <div>
+        <ion-item class="padding-top-10">
+            <ion-label class="bold">Valor R$:</ion-label>
+            <ion-input type="number" [(ngModel)]="abastecimento.valor"></ion-input>
+        </ion-item>
+    </div>
+    <div>
+        <ion-item class="padding-top-10">
+            <ion-label class="bold">Data:</ion-label>
+            <ion-input type="date" [(ngModel)]="abastecimento.data"></ion-input>
+        </ion-item>
+    </div>
+    <div class="padding-top-10">
+        <ion-card>
+            <ion-item>
+                <ion-label>Posto de combustível: </ion-label>
+                <ion-select interface="action-sheet" [(ngModel)]="abastecimento.postos_id">
+                    <ion-option *ngFor="let item of postos" value="{{ item.id }}">{{ item.nome_posto }}</ion-option>
+                </ion-select>
+            </ion-item>
+        </ion-card>
+    </div>
+    <div class="center">
+        <button ion-button small color="dark" (click)="addAbastecida()">Salvar</button> <button end ion-button small color="danger" (click)="voltar()">Cancelar</button>
+    </div>
+</ion-content>

@@ -1,0 +1,50 @@
+<ion-header>
+    <ion-navbar color="dark">
+        <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title>Detalhe da entrega</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+    <ion-card>
+        <ion-item>
+            <h2>Produto:</h2>Caixa d'agua 500L
+            <p>Data de emissão: 29/11/2019</p>
+        </ion-item>
+
+        <img src="https://w1.ezcdn.com.br/sblar/fotos/grande/17802fg1/caixa-dagua-bakof-tec-500l-polietileno.jpg">
+
+        <ion-card-content>
+            <p>Estado: RS</p>
+            <p>Cidade: Frederico Westphalen</p>
+            <p>Rua: Av. Porto Alegre</p>
+            <p>Bairro: Itapajé</p>
+            <p>Nº: 654</p>
+            <p>Contato: Jonh Doe</p>
+            <p>Telefone: 3745-8792</p>
+        </ion-card-content>
+
+        <ion-row>
+            <ion-col>
+                <button ion-button md-checkbox clear small>
+                <ion-icon name="thumbs-up"></ion-icon>
+            <div>Finalizar entrega</div>
+          </button>
+            </ion-col>
+            <ion-col>
+                <button ion-button md-warning clear small>
+                <ion-icon style="color: red;" name="text"></ion-icon>
+            <div>Reportar divergência</div>
+          </button>
+            </ion-col>
+            <ion-col align-self-center text-center>
+                <ion-note>
+                    11h ago
+                </ion-note>
+            </ion-col>
+        </ion-row>
+    </ion-card>
+</ion-content>

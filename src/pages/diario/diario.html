@@ -1,0 +1,55 @@
+<ion-header>
+    <ion-navbar color="dark">
+        <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title>Diário</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <ion-row>
+        <ion-col col-10>
+            <ion-item>
+                <ion-label class="bold">Data:</ion-label>
+                <ion-input type="date" [(ngModel)]="diario.data" (change)="salvaLocalStorage()"></ion-input>
+            </ion-item>
+        </ion-col>
+    </ion-row>
+    <!-- SALVA KM INICIAL -->
+    <ion-grid>
+        <!-- INICIO CONTAINER -->
+        <ion-row>
+            <ion-col col-8>
+                <ion-item>
+                    <ion-label class="bold">KM Inicial:</ion-label>
+                    <ion-input type="number" [(ngModel)]="diario.km_inicial" (change)="salvaLocalStorage()"></ion-input>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+        <!-- FIM CONTAINER -->
+    </ion-grid>
+
+    <ion-col>
+        <ion-item>
+            <ion-label class="bold">Destinos:</ion-label>
+            <ion-input type="text" [(ngModel)]="diario.destino" (change)="salvaLocalStorage()"></ion-input>
+        </ion-item>
+    </ion-col>
+    <!-- KM FINAL MAIS BOTÕES DE ENVIAR -->
+    <ion-grid class="padding-top-10">
+        <ion-row>
+            <ion-col col-8>
+                <ion-item>
+                    <ion-label class="bold">KM Final:</ion-label>
+                    <ion-input type="number" [(ngModel)]="diario.km_final" (change)="salvaLocalStorage()"></ion-input>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <div class="padding-top-10">
+        <div class="center">
+            <button class="bold" ion-button small color="dark" (click)="addDiario()">Cadastrar</button> <button end ion-button small color="danger" (click)="voltar()">Cancelar</button>
+        </div>
+    </div>
+</ion-content>

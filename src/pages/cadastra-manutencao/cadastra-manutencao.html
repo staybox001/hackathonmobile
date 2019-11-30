@@ -1,0 +1,38 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Adicionar Manutenção</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+    <div>
+        <ion-item>
+            <ion-label class="bold">Estabelecimento:</ion-label>
+            <ion-input type="text" [(ngModel)]="manutencao.estabelecimento"></ion-input>
+        </ion-item>
+    </div>
+    <div>
+        <ion-item>
+            <ion-label class="bold">Serviço Realizado:</ion-label>
+            <ion-textarea [(ngModel)]="manutencao.servico"></ion-textarea>
+        </ion-item>
+    </div>
+    <div>
+        <ion-item>
+            <ion-label class="bold">Data:</ion-label>
+            <ion-input type="date" [(ngModel)]="manutencao.data"></ion-input>
+        </ion-item>
+    </div>
+    <div>
+        <ion-item>
+            <ion-label class="bold">Valor R$:</ion-label>
+            <ion-input type="number" [(ngModel)]="manutencao.valor_manutencao" value="4"></ion-input>
+        </ion-item>
+    </div>
+    <!-- buttons -->
+    <div class="padding-top-10 center">
+        <button ion-button small color="dark" (click)="addManutencao()">Salvar</button> <button end ion-button small color="danger" (click)="voltar()">Cancelar</button>
+    </div>
+
+</ion-content>

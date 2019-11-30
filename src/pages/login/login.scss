@@ -1,0 +1,42 @@
+page-login {
+    // BACKGROUND IMAGEM
+    .bg-login {
+        width: 100%;
+        height: 100%;
+        background-image: url('https://distribuicao.abad.com.br/wp-content/uploads/2018/07/cargill-frota.jpg');
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+    }
+    // EFEITO DEGRADE
+    .escuro {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.849), rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.007), )
+    }
+    //paddings
+    .padding-25 {
+        padding: 25px;
+    }
+    .mg-top-35 {
+        padding-top: 35%
+    }
+    .mg-top-20 {
+        padding-top: 20%
+    }
+    // background input transparente
+    .bg-transparente {
+        background: transparent;
+    }
+    //botão
+    .bnt-login {
+        padding: 10px;
+        background: $snow;
+        border-radius: 100px;
+        color: black;
+    }
+    //link administrador
+    a {
+        text-decoration: none;
+    }
+}

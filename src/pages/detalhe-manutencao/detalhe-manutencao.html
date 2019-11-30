@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>DetalheManutencao</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+    <ion-card>
+        <ion-card-header>
+            <h4>Estabelecimento: {{ item?.estabelecimento }}</h4>
+        </ion-card-header>
+        <ion-card-content>
+            <p><b>Relizado em: </b> {{ item?.data }} </p>
+            <p><b>Descrição do serviço: </b> {{ item?.servico }} </p>
+            <p><b>Valor R$</b> {{ item?.valor_manutencao }}</p>
+        </ion-card-content>
+        <img src="http://jondev.website/storage/img-motoristas/Jonathan Amaral035.673.140-50.png" alt="">
+    </ion-card>
+
+</ion-content>

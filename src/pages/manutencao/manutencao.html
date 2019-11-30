@@ -1,0 +1,38 @@
+<ion-header>
+    <ion-navbar color="dark">
+        <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <!-- TITULO -->
+    <h2 class="center">Manutenções:</h2>
+    <div class="padding-top-10">
+        <!-- INICIO LISTA -->
+        <ion-list>
+            <ion-item-sliding *ngFor="let item of lista">
+                <ion-item>
+                    <h2>Mecanica: {{ item.estabelecimento }}</h2>
+                    <p>Data: {{ item.data }}</p>
+                    <p><strong>Valor:</strong> R$ {{ item.valor_manutencao }} </p>
+                </ion-item>
+                <!-- AÇÕES -->
+                <ion-item-options side="left">
+                    <button ion-button color="primary" (click)="abreDetalheManutencao(item)">
+                    <ion-icon name="text"></ion-icon>
+                      Detalhes
+                    </button>
+                </ion-item-options>
+            </ion-item-sliding>
+
+            <!-- ADICIONA MANUTENCAO  -->
+            <ion-fab bottom right>
+                <button ion-fab color="danger" (click)="abreCadastraManutencao()">
+                <ion-icon name="add"></ion-icon>
+              </button>
+            </ion-fab>
+        </ion-list>
+    </div>
+</ion-content>

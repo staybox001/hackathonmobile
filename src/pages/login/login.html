@@ -1,0 +1,40 @@
+<ion-content>
+    <!-- BACKGROUND -->
+    <div class="bg-login">
+        <!-- EFEITO ESCURO -->
+        <div class="escuro">
+            <!-- TEXTOS -->
+            <div class="mg-top-35">
+                <h5 class="snow center bold no-margin">
+                    Realize o login!
+                </h5>
+            </div>
+            <!-- INPUTS -->
+            <!-- USUARIO -->
+            <div class="padding-25">
+                <ion-item class="bg-transparente no-padding">
+                    <ion-label stacked class="snow bold">CPF</ion-label>
+                    <ion-input type="text" class="snow " [(ngModel)]="usuario.cpf"></ion-input>
+                </ion-item>
+                <!-- SENHA -->
+                <ion-item class="bg-transparente no-padding">
+                    <ion-label stacked class="snow bold">Senha</ion-label>
+                    <ion-input type="password" class="snow" [(ngModel)]="usuario.senha_motorista"></ion-input>
+                </ion-item>
+                <!-- BOTÕES -->
+
+                <div class="mg-top-20">
+                    <a href="#" (click)="loginUsuario()">
+                        <div class="bnt-login center bold">
+                            login
+                        </div>
+                    </a>
+                </div>
+                <!-- ESQUECI SENHA -->
+                <div class="snow light mg-top-20">
+                    Esqueceu sua senha? Contate o <a href="http://api.whatsapp.com/send?1=pt_BR&phone=55999398534">Administrador!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</ion-content>

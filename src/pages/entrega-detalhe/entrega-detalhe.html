@@ -29,22 +29,25 @@
 
         <ion-row>
             <ion-col>
-                <button ion-button md-checkbox clear small>
+                <button ion-button block color="primary">
                 <ion-icon name="thumbs-up"></ion-icon>
             <div>Finalizar entrega</div>
           </button>
             </ion-col>
+        </ion-row>
+
+        <ion-row>
             <ion-col>
-                <button ion-button md-warning clear small>
-                <ion-icon style="color: red;" name="text"></ion-icon>
-            <div>Reportar divergência</div>
-          </button>
-            </ion-col>
-            <ion-col align-self-center text-center>
-                <ion-note>
-                    11h ago
-                </ion-note>
+                <button ion-button block color="danger" (click)="reportar()">
+                    <ion-icon  name="text"></ion-icon>
+                          <div>Reportar divergência</div>
+                     </button>
             </ion-col>
         </ion-row>
+        <ion-col align-self-center text-center>
+            <ion-note>
+                11h ago
+            </ion-note>
+        </ion-col>
     </ion-card>
 </ion-content>

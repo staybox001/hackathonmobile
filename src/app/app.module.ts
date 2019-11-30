@@ -27,6 +27,7 @@ import { DiarioProvider } from '../providers/diario/diario';
 import { GeolocationProvider } from '../providers/geolocation/geolocation';
 import { EntregaPage } from '../pages/entrega/entrega';
 import { EntregaDetalhePage } from '../pages/entrega-detalhe/entrega-detalhe';
+import { EntregaReportPage } from '../pages/entrega-report/entrega-report';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { EntregaDetalhePage } from '../pages/entrega-detalhe/entrega-detalhe';
     DetalheManutencaoPage,
     CadastraManutencaoPage,
     EntregaDetalhePage,
-    EntregaPage
+    EntregaPage,
+    EntregaReportPage
   ],
   imports: [
     BrowserModule,
@@ -58,7 +60,8 @@ import { EntregaDetalhePage } from '../pages/entrega-detalhe/entrega-detalhe';
     DetalheManutencaoPage,
     CadastraManutencaoPage,
     EntregaPage,
-    EntregaDetalhePage
+    EntregaDetalhePage,
+    EntregaReportPage
 
   ],
   providers: [
@@ -73,7 +76,8 @@ import { EntregaDetalhePage } from '../pages/entrega-detalhe/entrega-detalhe';
     DiarioProvider,
     Geolocation,
     GeolocationProvider,
-    EntregaDetalhePage
+    EntregaDetalhePage,
+    EntregaReportPage
 
 
   ]
